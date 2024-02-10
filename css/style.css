@@ -1,0 +1,461 @@
+/* GLOBAL====>> */
+body{
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior:smooth;
+    position: relative;
+}
+:root{
+    --main-color:#e65f78 ;
+    --white-color:#fff;
+    
+}
+.max-w-500{
+    max-width: 31.25rem;
+}
+.max-w-750{
+    max-width: 46.875rem;
+}
+.max-w-310{
+    max-width: 19.375rem;
+}
+a{
+    text-decoration: none;
+}
+.special{
+    z-index: -44444;
+}
+ul{
+    list-style: none;
+}
+.space{
+    padding:6.25rem 0;
+}
+html{
+    scroll-padding-top: 40.26px;
+}
+::selection {
+    background-color: rgba(166, 175, 189, 0.3);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+.extra-container{
+    width: 80%;
+}
+:has(.hero.active) nav{
+    background-color: transparent!important;
+    /* position: absolute!important; */
+}
+:not(:has(.hero.active)) nav{
+    background-color: #fff !important;
+}
+:not(:has(.hero.active)) nav ul  a{
+    
+    color: #000;
+}
+:not(:has(.hero.active))  .navbar-brand .logo-light{
+    display: none;
+}
+:not(:has(.hero.active)) .navbar-brand .logo-dark{
+    display: block!important;
+    height: 1.6875rem;
+
+}
+
+/* .bg-trans{
+    background-color: rgba(0, 0, 0, 0.3)!important;
+} */
+/* :has(.nav-brand)  */
+
+
+/* ?START  ===========HEADER */
+header.header-img{
+    background-image:linear-gradient(#000a,#000a), url("../images/header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#home .gear{
+    position: fixed;
+    left: 0;
+    top: 20%;
+    z-index: 9;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 20px;
+    border-top-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#2b2424 ;
+    color: var(--white-color);
+}
+#home .gear a {
+    animation: rotate 2s infinite linear ;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(359deg);
+    }
+    }
+#home .button{
+    
+color: var(--white-color);
+background-color: transparent;
+border: 0.125rem solid var(--white-color);
+padding: 0.8rem 2rem;
+font-size: 1rem;
+border-radius: 2rem;
+transition: all 0.15s ease-in-out;
+}
+#home .button:hover {
+    color: #000;
+    background-color: var(--white-color);
+    border-color: var(--white-color);
+}
+#home .scroll{
+    bottom: -2.5rem;
+    left: -0.3%;
+}
+#home .scroll i{
+    position: relative;
+    bottom: -9.375rem;
+    height: 2.75rem;
+    width: 1.75rem;
+    line-height: 3.375rem;
+    border-radius: 1.875rem;
+    border: 2px solid var(--white-color);
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 0.625rem;
+    animation: bounce 1.2s 1s infinite linear;
+}
+#home .scroll i::after{
+    content: "";
+    position: absolute;
+    bottom: 0.625rem;
+    left: 45%;
+    width: 0.1875rem;
+    height: 0.9375rem;
+    background-color: var(--white-color);
+    border-radius: 0.125rem;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    80%{
+        transform: translateY(0);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+h1::after{
+content:"";
+animation:  typing 12s infinite ;
+animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes typing {
+    3.333%{
+content: "|";
+    }
+    6.666%{
+        content: "D|";
+            }
+            9.999%{
+                content: "De|";
+                    }
+                    13.332%{
+                        content: "Des|";
+                            }
+                            16.665%{
+                                content: "Desi|";
+                                    }
+                                    19.998%{
+                                        content: "Desig|";
+                                            }
+                                            23.331%{
+                                                content: "Design|";
+                                                    }
+                                                    26.664%{
+                                                        content: "Designe|";
+                                                            }
+                                                            29.997%{
+                                                                content: "Desiger|";
+                                                                    }
+                                                                    33.33%{
+                                                                        content: "F|";
+                                                                            }
+                                                                            36.663%{
+                                                                                content: "Fr|";
+                                                                                    }
+                                                                                    39.996%{
+                                                                                        content: "Fre|";
+                                                                                            }
+                                                                                            43.329%{
+                                                                                                content: "Free|";
+                                                                                                    }
+                                                                                                    46.662%{
+                                                                                                        content: "FreeL|";
+                                                                                                            };
+                                                                                                            49.995%{
+                                                                                                                content: "FreeLa|";
+                                                                                                                    }
+                                                                                                                    53.328%{
+                                                                                                                        content: "FreeLan|";
+                                                                                                                            }
+                                                                                                                            56.661%{
+                                                                                                                                content: "FreeLanc|";
+                                                                                                                                    }
+                                                                                                                                    59.994%{
+                                                                                                                                        content: "FreeLanc|";
+                                                                                                                                            }
+                                                                                                                                            63.327%{
+                                                                                                                                                content: "FreeLance|";
+                                                                                                                                                    }
+                                                                                                                                                    66.66%{
+                                                                                                                                                        content: "FreeLancer|";
+                                                                                                                                                            }
+                                                                                                                                                            69.993%{
+                                                                                                                                                                content: "P|";
+                                                                                                                                                                    }
+                                                                                                                                                                    73.326%{
+                                                                                                                                                                        content: "Ph|";
+                                                                                                                                                                            }
+                                                                                                                                                                            76.659%{
+                                                                                                                                                                                content: "Pho|";
+                                                                                                                                                                                    }
+                                                                                                                                                                                    79.992%{
+                                                                                                                                                                                        content: "Phot|";
+                                                                                                                                                                                            }
+                                                                                                                                                                                            83.325%{
+                                                                                                                                                                                                content: "Photo|";
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                    86.658%{
+                                                                                                                                                                                                        content: "Photog|";
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                            89.991%{
+                                                                                                                                                                                                                content: "Photogr|";
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                    93.324%{
+                                                                                                                                                                                                                        content: "Photogra|";
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                            96.657%{
+                                                                                                                                                                                                                                content: "Photograp|";
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                    99.99%{
+                                                                                                                                                                                                                                        content: "Photographe|";
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                            100%{
+                                                                                                                                                                                                                                                content: "Photographer|";
+                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                    
+}
+/* ?START===========>> NAV BARRRRRRRRRRR       */
+.navbar-brand img {
+    height: 1.6875rem;
+}
+.nav-link{
+    margin: 0 0.4375rem;
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+
+    /**START===============>ABOUT  */
+    .text-custom{
+        color: var(--main-color);
+    }
+    .about-social li a{
+        display: inline-block;
+        width: 2.8125rem;
+        height: 2.8125rem;
+        border: 0.125rem solid #d4d4d4;
+        border-radius: 50%;
+        color: #000;
+        line-height:2.8125rem ;
+        text-align: center;
+        font-size: 1.25rem;
+        transition: all 0.5s;
+    }
+    .about-social li a:hover{
+        color: var(--main-color);
+        border-color: var(--main-color);
+    }
+    /* !START=========================services */
+    .services-content{
+        border: 1px solid #e8e8e8;
+        border-radius: 0.3125rem;
+        padding:1.875rem;
+    }
+    .icon i{
+        color: var(--main-color);
+    }
+    .services-content h5{
+        position: relative;
+    }
+    .services-content h5::after{
+        content: "";
+        width: 15%;
+        height: 0.125rem;
+        background-color: var(--main-color);
+        position: absolute;
+        bottom: -0.625rem;
+        left: 42%;
+        transition:all 0.5s;
+        
+    }
+    .services-content:hover h5::after{
+        transform: scaleX(1.6);
+    }
+    /* START------------------AVAILABLE */
+    .hiring{
+        border: 0.125rem solid var(--main-color);
+        border-radius: 0.1875rem;
+        background-color: var(--main-color);
+        padding: 0.625rem 1.875rem;
+        color: var(--white-color);
+    }
+    /* ?START====================CLIENT */
+    #customize .carousel-inner .circle{
+        width: 7rem;
+        height: 7rem;
+    }
+    #customize .carousel-inner .size{
+        font-size: 1.125rem;
+    }
+    #customize .carousel-inner .test-icon{
+        color: var(--main-color);
+    }
+    #customize .carousel-indicators button{
+        width: 0.75rem;
+        height: 0.375rem;
+        background-color: var(--main-color);
+        border-radius: 1.25rem;
+        border: 0.125rem transparent solid;
+        margin: 0 0.0625rem;
+    }
+    #customize .carousel-indicators button.active{
+        width: 1.25rem;
+    }
+    /* *START=================PORTOFOLIO */
+    #portofolio .nav-pills .nav-link.active,#portofolio .nav-pills .show>.nav-link {
+    background-color: var(--main-color);
+    }
+    #portofolio .nav {
+        --bs-nav-link-color: #000;
+    }
+    #portofolio .nav-link{
+        transition: all 0.2s;
+    }
+    #portofolio .nav-link:hover{
+        padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: var(--bs-border-radius-pill);
+    background-color: var(--main-color);
+    color: var(--white-color);
+    }
+    #portofolio .portofolio-content .layer{
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    #portofolio .portofolio-content:hover .layer{
+        opacity: 1;
+    }
+    
+/* *START=================BLOG */
+.main{
+    color: var(--main-color);
+}
+.card{
+    --bs-card-border-color: transparent;
+}
+/* *start  contact */
+.contact-content .contact-icon i{
+    color: var(--main-color);
+
+}
+#contact input,#contact textarea{
+    border: 2px solid #e0e0e0;
+}
+#contact input:focus,#contact textarea:focus{
+    outline: none;
+    border-color: var(--main-color);
+}
+.button-bg{
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    padding: 15px 25px;
+    
+}
+/* footer */
+footer{
+    background-color: #212121;
+    padding: 70px 0;
+
+}
+footer ul li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgba(241, 241, 241, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ababab;
+}
+footer ul li{
+    font-size: 20px;
+    transition: all 0.5s;
+}
+footer ul li:hover a{
+    color: var(--main-color);
+}
+footer .scroller::after{
+    content: '\f077';
+    text-align: center;
+    position: fixed;
+    right: 18px;
+    bottom: 10px;
+    font-family:"FontAwesome";
+    width: 35px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+
+}
+footer p{
+    color: #ababab;
+}
+
